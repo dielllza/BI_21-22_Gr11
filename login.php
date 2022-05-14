@@ -1,0 +1,78 @@
+<?php session_start();
+if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
+	header("Location: home.php");
+}
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>App Creator | Log In</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/login-register.css">
+	<!-- <script type="text/javascript" src="js/login.js"></script> -->
+</head>
+<body>
+	<?php 
+		var_dump($_SESSION);
+		include_once("function_utils/ui_functions.php");
+	 ?>
+	<main>
+		<div class="photo">
+			<h2>Welcome back to <a href="index.html" style="text-decoration: none;"><span style="font-family: 'Times New Roman', cursive; color: #2e3f51;">App Creator</span></a></h2>
+			<img src="images/login-img.jpg">
+		</div>
+		<div class="form-content">
+			<h1 style="letter-spacing: 1px; font-family: Times New Roman; font-weight: 500;">APP CREATOR</h1>
+			<form method="post" action="form_processor_services/process_login.php">
+			<!-- <form method="post" action="database_services/db_login.php"> -->
+
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<label for="email">Email address:</label>
+							</td>
+							<td>
+								<input type="text" name="email" id="email" autofocus
+								 value = "<?php if(isset($_SESSION["email"])) { echo $_SESSION["email"]; }?>">
+							</td>
+						</tr>
+						<tr>
+						<td></td>
+						<td>
+							<?php 
+							displayErrors("email");	 
+							?>
+						</td>					
+						</tr>
+						<tr>
+							<td>
+								<label for="password">Password:</label>	
+							</td>
+							<td>
+								<input type="password" name="password" id="password"
+								value = "<?php if(isset($_SESSION["password"])) { echo $_SESSION["password"]; }?>">
+							</td>
+						</tr>
+						<tr>
+						<td></td>
+						<td>
+							<?php 
+							displayErrors("password");	 
+							?>
+						</td>					
+						</tr>
+					</tbody>
+				</table>
+				<?php displayErrors("login");?>
+				<input type="submit" name="submit" class="btn" value="Log in">
+			</form>
+				<p>No account?</p>
+				<p style=" margin-top: 4px"> <a href="register.php" style="text-decoration: none; color: #16a596;  margin-top: 4px">Register</a></p>
+		</div>
+	</main>
+	<?php
+	unset($_SESSION["errors"]);
+	?>
+</body>
+</html>
