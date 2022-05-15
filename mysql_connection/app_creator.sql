@@ -18,7 +18,7 @@ USE `app_creator` ;
 -- Table `app_creator`.`roles`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_creator`.`roles` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `role` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
@@ -28,7 +28,7 @@ ENGINE = InnoDB;
 -- Table `app_creator`.`users`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_creator`.`users` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `first_name` VARCHAR(45) NOT NULL,
   `last_name` VARCHAR(45) NOT NULL,
   `email_address` VARCHAR(45) NOT NULL,

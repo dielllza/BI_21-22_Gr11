@@ -31,11 +31,12 @@ function validatePhoneRegex($phone_regex, $phone) {
 }
 
 function validateBirthdate($birthday) {
-    $age = (date("Y-m-d") - $birthday);
-    if ($age < 17) {
-        appendToErrors("birthday", "User must be 18 or older");
+    if(isset($birthday)) { 
+        $age = (date("Y-m-d") - $birthday);
+        if ($age < 17) {
+            appendToErrors("birthday", "User must be 18 or older");
+        }
     }
-
 }
 
 function valdatePasswordRegex($password_regex, $password) {

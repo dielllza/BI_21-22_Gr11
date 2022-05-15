@@ -24,11 +24,9 @@ $password = $_POST["password"];
 validateNotNull($email, "email", "Email");
 validateNotNull($password, "password", "Password");
 validateEmailRegex($email_regex, $email);
-
+//todo edit this
 if (!empty($errors)) { 
-    $_SESSION["errors"] = $errors;
-    $_SESSION["email"] = $email;
-    $_SESSION["password"] = $password;
+    manageSession();
     header("Location: ../login.php");
 }
 else {
@@ -36,14 +34,19 @@ else {
     if($user) {
         $_SESSION["logged_in"] = true;
         $_SESSION["user_id"] = $user["id"];
+        // set to session name + id.
         header("Location: ../home.php");
     } else {
         $errors["login"] = array("Wrong email and password combination!");
-        $_SESSION["errors"] = $errors;
-        $_SESSION["email"] = $email;
-        $_SESSION["password"] = $password;
+        manageSession();
         header("Location: ../login.php");
     }
-    // set to session name + id.
+}
+
+function manageSession() {
+    global $errors, $email, $password;
+    $_SESSION["errors"] = $errors;
+    $_SESSION["email"] = $email;
+    $_SESSION["password"] = $password;
 }
 ?>

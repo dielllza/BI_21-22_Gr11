@@ -11,10 +11,9 @@ if (!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] != true) {
 	<title>Title</title>
 </head>
 <body>
-<?php var_dump($_SESSION) ?>
 <p>Hello dear user </p>
 <?php 
-echo $_SESSION["user_id"];
+echo "your id is " . $_SESSION["user_id"] . " ";
 ?>
 <a href = "form_processor_services/processs_logout.php"> Log out </a>
 </body>

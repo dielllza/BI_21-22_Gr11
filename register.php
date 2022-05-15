@@ -162,10 +162,10 @@ include_once("function_utils/ui_functions.php");
 						</tr>
 					</tbody>
 				</table>
+				<?php displayErrors("register");?>
 				<input type="submit" name="submit" class="btn" value="Register">
 				<!-- <button class="btn">Register</button> -->
 			</form>
-				<p id="registration-results" style="color: red"></p>
 				<p>Already have an account?</p>
 				<p style=" margin-top: 4px"> <a href="login.php" style="text-decoration: none; color: #16a596;">Log in</a></p>
 		</div>

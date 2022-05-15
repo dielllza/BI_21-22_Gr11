@@ -3,6 +3,7 @@
 session_start();
 
 require_once("../function_utils/validation.php");
+require_once("../database_services/db_register.php");
 
 unset($_SESSION["errors"]);
 
@@ -50,7 +51,8 @@ validatePasswordsMatch($password, $confirm_password);
 validatePasswordLength($password, "password", "Password");
 
 
-if (!empty($errors)) { 
+function manageSession() {
+   global $errors, $first_name, $last_name, $email, $phone, $birthday, $country, $password, $confirm_password;
     $_SESSION["errors"] = $errors;
     $_SESSION["first_name"] = $first_name;
     $_SESSION["last_name"] = $last_name;
@@ -60,11 +62,23 @@ if (!empty($errors)) {
     $_SESSION["country"] = $country;
     $_SESSION["password"] = $password;
     $_SESSION["confirm_password"] = $confirm_password;
-    header("Location: ../register.php");
 }
-else {
-    $_SESSION["logged_in"] = true;
-    header("Location: ../home.php");
-    // set to session name + id.
+
+if (!empty($errors)) { 
+    manageSession();
+    header("Location: ../register.php");
+} else {
+    $user_id = register($first_name, $last_name, $email, $phone, 
+    $birthday, $country, $password);
+    if($user_id) {
+        $_SESSION["logged_in"] = true;
+        $_SESSION["user_id"] = $user_id;
+        // set to session name + id.
+        header("Location: ../home.php");
+    } else {
+        $errors["register"] = array("Could not register. Please try again later");
+        manageSession();
+        header("Location: ../register.php");
+    }
 }
 ?>

@@ -12,8 +12,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 	<!-- <script type="text/javascript" src="js/login.js"></script> -->
 </head>
 <body>
-	<?php 
-		var_dump($_SESSION);
+	<?php
 		include_once("function_utils/ui_functions.php");
 	 ?>
 	<main>
