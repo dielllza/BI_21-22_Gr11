@@ -7,9 +7,9 @@ After you have succesfully pulled the app to your local computer these are the s
 
 ## Setting up the database
 1. Go to MySQL Workbench (its an app you need to have installed along with MySQL) and log in as the root user
-2. In the folder mysql_connection you will find this file app_creator.sql, copy its contents
+2. On this repository in the folder mysql_connection you will find this file app_creator.sql, copy its contents
 3. Create a new SQL file and paste the contents 
-4. Run the sript, and you will see that the app_creator database has been creates under schemas
+4. Run the sript, and you will see that the app_creator database has been created under schemas
 
 ## Setting up xampp
 1. Place the app folder inside your xampp C:\xampp\htdocs folder (things might not work well if you have Wordpress there, so please move Wordpress to another folder for now)
