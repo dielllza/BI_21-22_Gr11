@@ -17,6 +17,6 @@ After you have succesfully pulled the app to your local computer these are the s
 3. Visit http://localhost:2521/punimi/login.php (NOTE my port is 2521, you can check your port on the XAMPP control panel)
 (ANOTHER NOTE: "punimi" in url is the name of the folder that I placed the files on, for your case type the name of your folder)
 4. On your browser you shoud see something like this: 
-![image](https://user-images.githubusercontent.com/45471217/168468829-ade5b091-04c8-4c77-9535-8d6e705ef584.png)
+![image](https://user-images.githubusercontent.com/45471217/168468991-c1c8cd96-1794-44f4-b6f3-75c1c5f35764.png)
 
 Go on nd create your first user and test the app!
