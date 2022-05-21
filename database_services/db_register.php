@@ -11,3 +11,11 @@
     $user = run_mysql_query($query);
     return $user;
  }
+
+ function findUserWithEmail($email) {
+   global $connection;
+   $esc_email= escape_this_string($email);
+   $query = "SELECT * FROM users WHERE email_address = '$esc_email'";
+   $user = fetch_record($query);
+   return $user;
+ }

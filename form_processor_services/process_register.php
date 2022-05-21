@@ -44,6 +44,7 @@ validateNotNull($country, "country", "Country");
 validateNotNull($password, "password", "Password");
 validateNotNull($confirm_password, "confirm_password", "Password confirmation");
 validateEmailRegex($email_regex, $email);
+validateEmailIsUnique($email);
 validatePhoneRegex($phone_regex, $phone);
 validateBirthdate($birthday);
 valdatePasswordRegex($password_regex, $password);

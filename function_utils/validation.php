@@ -1,4 +1,5 @@
 <?php
+require_once("../database_services/db_register.php");
 function validateNotNull($input, $inputName, $inputMessageText) {
     if (empty($input)) {
         // echo("$inputMessageText is empty");
@@ -20,8 +21,11 @@ function validateEmailRegex($email_regex, $email) {
     }
 }
 
-function validateEmailIsUnique() {
- // todo via db
+function validateEmailIsUnique($email) {
+    $user = findUserWithEmail($email);
+    if ($user) {
+        appendToErrors("email", "Email already exists");
+    }
 }
 
 function validatePhoneRegex($phone_regex, $phone) {
