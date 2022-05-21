@@ -8,7 +8,7 @@ include_once("function_utils/ui_functions.php");
 <html>
 <head>
 	<title>App Creator | Register</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/login-register.css">
+	<link rel="stylesheet" type="text/css" href="css/login-register.css">
 </head>
 <body>
 	<main>

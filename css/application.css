@@ -1,0 +1,190 @@
+.intro {
+    width: 100%;
+    height:500px;
+    background-color: lightblue;
+    background-image: url(images/rindle-background.png);
+    background-repeat:repeat-x;
+    background-attachment: scroll;
+    background-position: bottom;
+    background-size: 450px;
+    
+    padding: 10px;
+    line-height: 2em;
+    color: rgb(20, 21, 56);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.intro h1 { 
+    font-size: 2em;
+}
+.intro h2 {
+    font-size: 1em;
+}
+
+.challenge, .solution {
+display: flex;
+flex-direction: row;
+text-align: left;
+padding: 10px;
+line-height: 2em;
+}
+.text {
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-justify:inter-word;
+}
+ .text h1 {
+    font-size: 2em;
+    padding: 30px;
+}
+
+ .text p {
+    padding-left: 30px;
+    font-size: 1.2em;
+}
+mark{
+    background-color: lightblue;
+}
+
+.challenge .image {
+    padding-left: 150px;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.solution .image {
+    padding-right: 150px;
+    font-style: italic;
+    text-align: center;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+}
+
+.table{
+    padding-top: 20px;
+    width: 50%;
+    
+}
+
+#app-info thead tr {
+    border: 2.1px solid #4c6f91;
+    background-color: #84abcf;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#app-info {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width:100%;
+    border-spacing: 0.5px;
+    border-collapse: separate;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    
+}
+
+#app-info td, #app-info th {
+    font-size: 1em;
+    border: 2px solid #4c6f91;;
+    padding: 10px;
+}
+
+#app-info tbody th {
+    font-size: 1.em;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #6a81e7;
+    color: #ffffff;
+    border: 2px solid #3b5570;
+}
+
+#app-info td {
+    color: #000000; 
+    background-color: #b5d5e7;
+}
+
+#survey {
+    float: right;
+    padding-left: 150px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#survey p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}    
+
+#survey  .question-answer label {
+    display: block;
+    font-size: 1em;
+}
+
+#survey  textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+ }
+
+ #survey textarea:hover {
+        outline:rgb(20, 21, 56);
+        border: 2px solid #095484;
+}
+
+#survey button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+    background-color: #095484;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+ }
+
+#survey button:hover {
+    background-color: #0666a3;
+}
+
+   #survey input {
+        width: auto;
+        margin-right: 15px;
+        vertical-align: middle;
+ }
+
+ .link {
+     height: 50px;
+     width: 100%;
+     text-align: center;
+     background-color: skyblue;
+     color: white;
+     font-size: 1.5em;
+ }
+
+.link span a{
+    color: rgb(23, 23, 99);
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+#example{
+    width: 100%;
+    height: 300px;
+}
+
+.table h1{
+    padding-bottom: 20px;
+}
+   

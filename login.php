@@ -8,7 +8,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 <html>
 <head>
 	<title>App Creator | Log In</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/login-register.css">
+	<link rel="stylesheet" type="text/css" href="css/login-register.css">
 	<!-- <script type="text/javascript" src="js/login.js"></script> -->
 </head>
 <body>

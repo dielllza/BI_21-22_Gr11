@@ -1,0 +1,17 @@
+CACHE MANIFEST
+# v1.0 : 10-08-2014
+ 
+CACHE:
+# pages
+about.html
+ 
+# styles & scripts
+application.css
+common_styling.css
+about_styling.css
+
+# images
+
+
+FALLBACK:
+/ /offline.html

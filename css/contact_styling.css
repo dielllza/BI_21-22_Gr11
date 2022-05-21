@@ -1,0 +1,147 @@
+.contact {
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 1em 1em;
+    background-color: hsla(187, 68%, 60%, 0.712);
+    width: 100%;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#myform input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.submitButton {
+    color: white;
+    padding-top: 10px;
+    border: none;
+}
+
+#submit {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+input[type=submit]:hover {
+    background-color: #688f5c;
+    cursor: pointer;
+}
+
+.contact-us {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.contact-Info {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.contact-form {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.info-form:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mailTO {
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.tel {
+    text-align: center;
+    position: relative;
+    margin: 1em;
+    border-bottom: 0.1em solid gray;
+}
+
+.email1 {
+    text-align: center;
+    position: relative;
+    margin: 1em;
+    border-bottom: 0.1em solid gray;
+}
+
+.location {
+    text-align: center;
+    position: relative;
+    margin: 1em;
+    border-bottom: 0.1em solid gray;
+}
+
+#canvas {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.location a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.firstname-lastname {
+    display: flex;
+}
+
+.firstname {
+    padding-right: 10px;
+    width: 50%;
+}
+
+.last-name {
+    padding-left: 10px;
+    width: 50%;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+#error_message {
+    color: red;
+    font-weight: bold;
+}
+
+.phone-time {
+    display: flex;
+}
+
+.phone {
+    padding-right: 10px;
+    width: 50%
+}
+
+.time {
+    padding-left: 10px;
+    width: 50%
+}
