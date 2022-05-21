@@ -46,6 +46,8 @@ CREATE TABLE IF NOT EXISTS `app_creator`.`users` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO `app_creator`.`roles` (`id`, `role`) VALUES ('1', 'admin');
+INSERT INTO `app_creator`.`roles` (`id`, `role`) VALUES ('2', 'user');
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
