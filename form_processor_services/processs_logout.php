@@ -4,5 +4,5 @@ unset($_SESSION["logged_in"]);
 unset($_SESSION["user_id"]);
 var_dump($_SESSION);
 
-header("Location: ../login.php")
+header("Location: ../index.php")
 ?>

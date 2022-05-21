@@ -72,10 +72,11 @@ if (!empty($errors)) {
     $user_id = register($first_name, $last_name, $email, $phone, 
     $birthday, $country, $password);
     if($user_id) {
-        $_SESSION["logged_in"] = true;
+         $_SESSION["logged_in"] = true;
         $_SESSION["user_id"] = $user_id;
+        $_SESSION["first_name"] =$first_name;
         // set to session name + id.
-        header("Location: ../home.php");
+        header("Location: ../index.php");
     } else {
         $errors["register"] = array("Could not register. Please try again later");
         manageSession();

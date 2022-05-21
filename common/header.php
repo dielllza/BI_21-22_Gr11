@@ -1,12 +1,14 @@
-
+<?php
+session_start();
+?>
 <header>
-        <a href="index.html">
+        <a href="index.php">
             <div class="header-title">
                 <h1>App Agency</h1>
                 <h4>Agjenci e aplikacioneve</h4>
             </div>
         </a>
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="register.php">Register</a></li>
             </ul>
@@ -15,6 +17,16 @@
             <ul>
                 <li><a href="login.php">Login</a></li>
             </ul>
+        </nav> -->
+        <nav>
+        <?php if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) :?>
+	<ul><li> <span style="color:white"> Hello, <?php echo " ". $_SESSION["first_name"] .""?></span></li>
+        <li><a href="form_processor_services/processs_logout.php" style="color:white;">Logout</a>  </li>
+        </ul>          
+                <?php else : ?>
+                    <ul><li><a href = "login.php"> Login </a></li>
+                    <li><a href="register.php">Register</a></li></ul>
+                <?php endif; ?>
         </nav>
         <nav>
             <ul>

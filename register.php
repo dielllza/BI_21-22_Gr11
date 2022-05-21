@@ -1,6 +1,6 @@
 <?php session_start();
 if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
-	header("Location: home.php");
+	header("Location: index.php");
 }
 include_once("function_utils/ui_functions.php");
 ?>

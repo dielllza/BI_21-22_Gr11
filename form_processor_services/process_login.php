@@ -15,7 +15,7 @@ $email_regex = '/^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$/i'; //email is ca
 $errors = [];
 
 if(isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
-	header("Location: ../home.php");
+	header("Location: ../index.php");
 }
 
 $email = $_POST["email"];
@@ -34,8 +34,9 @@ else {
     if($user) {
         $_SESSION["logged_in"] = true;
         $_SESSION["user_id"] = $user["id"];
+        $_SESSION["first_name"] = $user["first_name"];
         // set to session name + id.
-        header("Location: ../home.php");
+        header("Location: ../index.php");
     } else {
         $errors["login"] = array("Wrong email and password combination!");
         manageSession();
