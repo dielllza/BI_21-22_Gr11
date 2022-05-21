@@ -1,6 +1,6 @@
 
 <header>
-        <a href="index.html">
+        <a href="index.php">
             <div class="header-title">
                 <h1>App Agency</h1>
                 <h4>Agjenci e aplikacioneve</h4>
