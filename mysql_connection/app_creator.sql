@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `app_creator`.`users` (
   `password` VARCHAR(45) NOT NULL,
   `roles_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_users_roles_idx` (`roles_id` ASC) VISIBLE,
+  INDEX `fk_users_roles_idx` (`roles_id` ASC),
   CONSTRAINT `fk_users_roles`
     FOREIGN KEY (`roles_id`)
     REFERENCES `app_creator`.`roles` (`id`)

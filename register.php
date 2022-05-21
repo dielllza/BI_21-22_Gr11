@@ -1,6 +1,6 @@
 <?php session_start();
 if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
-	header("Location: home.php");
+	header("Location: index.php");
 }
 include_once("function_utils/ui_functions.php");
 ?>
@@ -8,7 +8,7 @@ include_once("function_utils/ui_functions.php");
 <html>
 <head>
 	<title>App Creator | Register</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/login-register.css">
+	<link rel="stylesheet" type="text/css" href="css/login-register.css">
 </head>
 <body>
 	<main>

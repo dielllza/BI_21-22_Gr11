@@ -1,0 +1,186 @@
+.header title a {
+    position: initial;
+}
+
+.motto {
+    background: radial-gradient(ellipse at top, gray, transparent),
+            radial-gradient(ellipse at bottom, hsla(187, 68%, 60%, 0.712), transparent);
+}
+
+.motto h1 {
+    padding: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.company-intro {
+    width: 100%;
+    overflow: auto;
+    padding: 2em;
+    font-size: 1.3em;
+}
+
+.svg-triangle svg {
+    max-width: 20%;
+    float: left;
+    fill: midnightblue;
+    stroke: black;
+    stroke-width: 2;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out; 
+}
+
+.svg-triangle svg:hover {
+    fill: maroon;
+    transform: rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+}
+
+.company-desc {
+    max-width: 70%;
+    float: right;
+    margin-left: 1.5em;
+    margin-right: 3em;
+    font-size: 1.1em;
+    text-align: justify;
+}
+.grid-header {
+    grid-column: 1 / span 3;
+}
+
+.grid-header h2 {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+main {
+    width: 100%;
+}
+
+.responsibilities {
+    background-color: aliceblue;
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 2em;
+    padding: 1em;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-left:  5%;
+    padding-right: 5%;
+}
+
+.grid-content {
+    padding-left: 3em;
+}
+
+.grid-content p:first-child {
+    font-size: 1.7em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+   
+}
+
+.grid-content p:nth-child(2) {
+    font-size: 1.3em;
+    padding-bottom: 0.8em;
+}
+
+.grid-content ul {
+    list-style-position: inside;
+    list-style-image: url('images/tick2.jpg');
+}
+
+.grid-content li > ul {
+    list-style: circle;
+    list-style-position: inside;
+    font-size: 0.8em;
+}
+
+.grid-content li > ol {
+    list-style: lower-alpha;
+    list-style-position: inside;
+    font-size: 0.8em;
+}
+
+.grid-content ul li {
+    padding: 0.5em;
+    font-size: 1.1em;
+}
+
+table {
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid black;
+    border-spacing: 0.5em;
+    border-collapse: collapse;
+    width: 80%;
+    table-layout: fixed;
+    padding-bottom: 2em;
+}
+
+table caption {
+    font-size: 1.2em;
+}
+
+th, td {
+    padding: 0.5em;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+td ul {
+    padding-left: 1.5em;
+}
+
+td ul li {
+    padding: 0.3em;
+}
+
+thead {
+  background-color: rgb(157, 203, 231);
+}
+
+.learn-more p {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.videos {
+    width: 100%;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em;
+}
+
+.agile-video {
+    float: left;
+    padding: 0 2.5em;
+}
+
+.design-system-video {
+    padding: 0 2.5em;
+}
+
+.company-desc a {
+    font-size: 1em;
+    position: initial;
+    color: blue;
+}
+
+.company-desc a:hover {
+    text-decoration: none;
+} 
+
+.company-desc a:visited {
+    color: purple;
+}
+
+.freelancer-vs-agency {
+    margin-bottom: 3em;
+}

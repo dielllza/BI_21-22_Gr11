@@ -1,6 +1,6 @@
 <?php session_start();
 if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
-	header("Location: home.php");
+	header("Location: index.php");
 }
 
 ?>
@@ -8,7 +8,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 <html>
 <head>
 	<title>App Creator | Log In</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/login-register.css">
+	<link rel="stylesheet" type="text/css" href="css/login-register.css">
 	<!-- <script type="text/javascript" src="js/login.js"></script> -->
 </head>
 <body>
@@ -18,7 +18,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 	<main>
 		<div class="photo">
 			<h2>Welcome back to <a href="index.html" style="text-decoration: none;"><span style="font-family: 'Times New Roman', cursive; color: #2e3f51;">App Creator</span></a></h2>
-			<img src="images/login-img.jpg">
+			<a href="images/login-img.jpg"><img src="images/login-img.jpg"></a>
 		</div>
 		<div class="form-content">
 			<h1 style="letter-spacing: 1px; font-family: Times New Roman; font-weight: 500;">APP CREATOR</h1>

@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway-Light.ttf);
+    font-weight: normal;
+  }
+
+.app1, .app3 {
+background-color:rgb(82, 140, 158);
+color: white;
+text-align: left;
+padding-left: 1em;
+display: flex;
+flex-direction: row;
+}
+
+.app_description1 h1 {
+    line-height: 3em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.app_description1 p, .app_description2 p {
+    margin-top: 2em;
+    font-size: 1.25em;
+    font-family: Raleway;
+}
+
+.app_description1 {
+    margin-right: 15em;
+}
+
+.img1 {
+    float: right;
+
+}
+
+.app2 {
+    background-color:rgb(100, 111, 114);
+    color: white;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+ }
+
+ .app_description2 h1 {
+    line-height: 3em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.app_description2 {
+    margin-left: 20em;
+    padding-right: 1em;
+}
+
+.img2 {
+     float: left;
+     margin-left: 2em;   
+}
+  
+  @keyframes move_img {
+    0%   {left:0px ; }
+    100% {left: 50px; }
+  }
+
+  .app1:hover .img1 {
+    position: relative;
+    animation: move_img 3s ;
+    transform: scale(0.75,0.75);   
+  }
+
+  .app2:hover .img2 {
+    transform: rotate(90deg) translate(0,-120px);
+  }
+
+.app3:hover{
+    background-color:rgb(82, 140, 158);
+    animation-name: bg_color; 
+    animation-duration: 2s;
+}
+
+.img3{
+    float: right;
+    margin-right: 2em;
+}
+
+.app3:hover .img3{
+    transform: skew(20deg,10deg);
+}
+
+@keyframes bg_color {
+    0%  {background-color:  rgb(82, 140, 158);}
+    25% {background-color:  rgb(188, 210, 230);}
+    50% {background-color:  rgb(117, 172, 224);}
+    75% {background-color:  rgb(40, 69, 97);}
+    100%{background-color:  rgb(90, 133, 173);}
+}
+
+.table_video {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(63, 97, 129);
+    display: flex;
+    flex-direction: row;
+}
+
+.table {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#statistics thead tr {
+    border: 2.1px solid #4c552f;
+    background-color: #333627;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#statistics {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 109%;
+    border-spacing: 1px;
+    border-collapse: separate;
+}
+
+#statistics td, #statistics th {
+    font-size: 1em;
+    border: 2px solid #4c552f;
+    padding: 3px 7px 2px 7px;
+    padding: 10px;
+}
+
+#statistics tbody th {
+    font-size: 1.em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #65703e;
+    color: #ffffff;
+}
+
+#statistics tr.row td {
+    color: #000000; 
+    background-color: #85915e;
+}
+
+.video{
+   float: right;
+   margin-top: 80px;
+   padding-left: 250px;  
+}
+
+#loading {
+    background: #334a5a;
+    height: 100px;
+    display: flexbox;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+.rect {
+    fill: none;
+    stroke-width: 8px;
+    stroke: white;
+    stroke-dasharray: 40;
+    stroke-dashoffset: 50%;
+    -webkit-animation: movedash 1.5s forwards 0s infinite;
+            animation: movedash 1.5s forwards 0s infinite;
+}
+
+.globload .text {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: white;
+      font-family:'Courier New', Courier, monospace;
+      font-size: 1.5em;  
+}
+
+  @-webkit-keyframes movedash {
+    to {
+      stroke-dashoffset: 250%;
+    }
+  }
+  
+  @keyframes movedash {
+    to {
+      stroke-dashoffset: 250%;
+    }
+  }
+
+ .button {
+    padding-top: 30px;
+}
+ .button .read {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(95, 89, 102);
+    color: white;
+    text-align: center;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+  
+  
+  
+
+
