@@ -34,7 +34,7 @@ else {
     if($user) {
         $_SESSION["logged_in"] = true;
         $_SESSION["user_id"] = $user["id"];
-        $_SESSION["first_name"] = $user["first_name"];
+        $_SESSION["first_name"]=$user["first_name"];
         // set to session name + id.
         header("Location: ../index.php");
     } else {
