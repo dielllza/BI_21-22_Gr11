@@ -33,7 +33,8 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 							</td>
 							<td>
 								<input type="text" name="email" id="email" autofocus
-								 value = "<?php if(isset($_SESSION["email"])) { echo $_SESSION["email"]; }?>">
+								 value = "<?php if(isset($_SESSION["email"])) { echo $_SESSION["email"]; }
+								 				if(isset($_COOKIE["email"])) echo $_COOKIE['email'];?>">
 							</td>
 						</tr>
 						<tr>
@@ -50,7 +51,8 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 							</td>
 							<td>
 								<input type="password" name="password" id="password"
-								value = "<?php if(isset($_SESSION["password"])) { echo $_SESSION["password"]; }?>">
+								value = "<?php if(isset($_SESSION["password"])) { echo $_SESSION["password"]; }
+											   if(isset($_COOKIE["password"])) echo $_COOKIE['password'];?>">
 							</td>
 						</tr>
 						<tr>
@@ -65,6 +67,12 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 				</table>
 				<?php displayErrors("login");?>
 				<input type="submit" name="submit" class="btn" value="Log in">
+				<div>
+				<label>
+					<input type="checkbox" name="remember" value="1">
+						Remember me
+				</label>
+				</div>
 			</form>
 				<p>No account?</p>
 				<p style=" margin-top: 4px"> <a href="register.php" style="text-decoration: none; color: #16a596;  margin-top: 4px">Register</a></p>

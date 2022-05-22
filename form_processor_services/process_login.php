@@ -20,6 +20,12 @@ if(isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 
 $email = $_POST["email"];
 $password = $_POST["password"];
+$remember = $_POST["remember"];
+
+if($remember==1){
+    setcookie("email", $email, time()+60*60*24*10,"/");
+    setcookie("password", $password, time()+60*60*24*10,"/");
+}
 
 validateNotNull($email, "email", "Email");
 validateNotNull($password, "password", "Password");
