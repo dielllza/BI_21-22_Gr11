@@ -9,14 +9,20 @@ session_start();
             </div>
         </a>
         <nav>
-        <?php if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) :?>
-	<ul><li> <span style="color:white"> Hello, <?php echo " ". $_SESSION["first_name"] .""?></span></li> 
-        <li><a href="form_processor_services/processs_logout.php" style="color:white;">Logout</a>  </li>
-        </ul>          
-                <?php else : ?>
-                    <ul><li><a href = "login.php"> Login </a></li>
-                    <li><a href="register.php">Register</a></li></ul>
-                <?php endif; ?>
+        <?php if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"]) :?>
+            <ul>
+                <li> <span style="color:white"> Hello, <?php echo " ". $_SESSION["first_name"] .""?></span></li>
+                <li><a href="form_processor_services/processs_logout.php" style="color:white;">Logout</a>  </li>
+            </ul>
+        <?php else : ?>
+            <ul>
+                <li><a href = "login.php"> Login </a></li>
+                <li><a href="register.php">Register</a></li>
+            </ul>
+        <?php endif; ?>
+        </nav>
+        <nav>
+
         </nav>
         <nav>
             <ul>
