@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+
+.content {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+p {
+    margin: 0;
+    padding: 0.5em;
+}
