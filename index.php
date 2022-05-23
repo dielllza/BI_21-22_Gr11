@@ -25,9 +25,6 @@
                     <p>This is a W3C standards compliant free PSD website template from OS Templates.
                         This template is distributed using a Website Template License.
                         For more free PSD Templates visit OS-Templates.com.
-                        This is a W3C standards compliant free PSD website template from OS Templates.
-                        This template is distributed using a Website Template License.
-                        For more free PSD Templates visit OS-Templates.com.
                     </p>
                 </div>
             </div>

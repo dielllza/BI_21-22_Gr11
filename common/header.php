@@ -11,7 +11,7 @@ session_start();
         <nav>
         <?php if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"]) :?>
             <ul>
-                <li> <span style="color:white"> Hello, <?php echo " ". $_SESSION["first_name"] .""?></span></li>
+                <li> <span style="color:white"><a href="../user_profile.php"><?php echo " ". $_SESSION["first_name"] .""?></span></li>
                 <li><a href="form_processor_services/processs_logout.php" style="color:white;">Logout</a>  </li>
             </ul>
         <?php else : ?>
