@@ -5,8 +5,16 @@
  {
     global $connection;
     $esc_email= escape_this_string($email);
-    $esc_password = escape_this_string($password);
-    $query = "SELECT * FROM users WHERE email_address = '$esc_email' AND password = '$esc_password' ";
-    $user = fetch_record($query);
+    $userRecord = "SELECT * FROM users WHERE email_address = '$esc_email'";
+    $user = fetch_record($userRecord);
+
+    $hashPassword = $user["password"];
+
+    $esc_password = password_verify($password, $hashPassword);
+
+    if (!$esc_password) {
+        throw new Exception("Incorrect password " . "X" . print_r($user) . "X ". $password . " " . $hashPassword);
+    }
+
     return $user;
  }

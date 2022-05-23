@@ -5,7 +5,7 @@
  {
     global $connection;
     $esc_email= escape_this_string($email);
-    $esc_password = escape_this_string($password);
+    $esc_password = password_hash($password, PASSWORD_DEFAULT);
     $esc_first_name = escape_this_string($first_name);
     $esc_last_name = escape_this_string($last_name);
     $esc_birthday = escape_this_string($birthday);

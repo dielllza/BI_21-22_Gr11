@@ -7,7 +7,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>App Creator | Log In</title>
+	<title>App Agency | Log In</title>
 	<link rel="stylesheet" type="text/css" href="css/login-register.css">
 	<!-- <script type="text/javascript" src="js/login.js"></script> -->
 </head>
@@ -17,7 +17,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 	 ?>
 	<main>
 		<div class="photo">
-			<h2>Welcome back to <a href="index.html" style="text-decoration: none;"><span style="font-family: 'Times New Roman', cursive; color: #2e3f51;">App Creator</span></a></h2>
+			<!--<h2>Welcome back to <a href="index.html" style="text-decoration: none;"><span style="font-family: 'Times New Roman', cursive; color: #2e3f51;">App Creator</span></a></h2>-->
 			<a href="images/login-img.jpg"><img src="images/login-img.jpg"></a>
 		</div>
 		<div class="form-content">

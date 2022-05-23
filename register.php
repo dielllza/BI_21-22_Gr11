@@ -7,17 +7,17 @@ include_once("function_utils/ui_functions.php");
 <!DOCTYPE html>
 <html>
 <head>
-	<title>App Creator | Register</title>
+	<title>App Agency | Register</title>
 	<link rel="stylesheet" type="text/css" href="css/login-register.css">
 </head>
 <body>
 	<main>
 		<div class="photo">
-			<h2>Welcome to <a href="index.html" style="text-decoration: none;"><span style="font-family: 'Times New Roman', cursive; color: #2e3f51;">App Creator</span></a></h2>
+			<!--<h2>Welcome to <a href="index.html" style="text-decoration: none;"><span style="font-family: 'Times New Roman', cursive; color: #2e3f51;">App Agency</span></a></h2>-->
 			<a href="images/login-img.jpg"><img src="images/login-img.jpg"></a>
 		</div>
 		<div class="form-content">
-			<h1 style="letter-spacing: 1px; font-family: Times New Roman; font-weight: 500;">APP CREATOR</h1>
+			<h1 style="letter-spacing: 1px; font-family: Times New Roman; font-weight: 500;">APP AGENCY</h1>
 			<form method="post" action="form_processor_services/process_register.php">
 				<table>
 					<tbody>

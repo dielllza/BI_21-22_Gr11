@@ -37,16 +37,18 @@ if (!empty($errors)) {
     header("Location: ../login.php");
 }
 else {
-    $user = login($email, $password);
-    if($user) {
+    try {
+        $user = login($email, $password);
         $_SESSION["logged_in"] = true;
         $_SESSION["user_id"] = $user["id"];
         $_SESSION["first_name"] = $user["first_name"];
         $_SESSION["role_id"] = $user["roles_id"];
         // set to session name + id.
         header("Location: ../index.php");
-    } else {
-        $errors["login"] = array("Wrong email and password combination!");
+    }
+    catch(Exception $e) {
+        //echo $e->getMessage();
+        $errors["login"] = array("Wrong email and password combination! " . $e->getMessage());
         $writer = new FailedLoginLog();
         date_default_timezone_set('UTC');
         $writer->writeToFile($email, date('m/d/Y h:i:s a', time()), $_SERVER['REMOTE_ADDR']);
