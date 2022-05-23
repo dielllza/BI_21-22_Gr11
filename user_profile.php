@@ -20,8 +20,6 @@ $currentUser = fetch_record($currentUser);
     <div class="form-content">
         <h1 style="letter-spacing: 1px; font-family: Times New Roman; font-weight: 500;">Your Profile</h1>
         <div class="photo">
-            <!-- <h2>Welcome to <a href="index.html" style="text-decoration: none;"><span style="font-family: 'Times New Roman', cursive; color: #2e3f51;">App Creator</span></a></h2>
-             <a href="images/login-img.jpg"><img src="images/login-img.jpg"></a>-->
             <img src="images/profile_image.png" width = "100"/>
         </div>
         <form method="post" action="form_processor_services/process_update.php">
@@ -133,45 +131,10 @@ $currentUser = fetch_record($currentUser);
                         </select>
                     </td>
                 </tr>
-<!--                <tr>-->
-<!--                    <td>-->
-<!--                        <label for="password">New password:</label>-->
-<!--                    </td>-->
-<!--                    <td>-->
-<!--                        <input type="password" name="password" id="password"-->
-<!--                               value = "">-->
-<!--                    </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td></td>-->
-<!--                    <td>-->
-<!--                        --><?php
-//                            displayErrors("password");
-//                        ?>
-<!--                    </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td>-->
-<!--                        <label for="confirm_password">Confirm new password:</label>-->
-<!--                    </td>-->
-<!--                    <td>-->
-<!--                        <input type="password" name="confirm_password" id="confirm_password"-->
-<!--                               value = "">-->
-<!--                    </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td></td>-->
-<!--                    <td>-->
-<!--                        --><?php
-//                        displayErrors("confirm_password");
-//                        ?>
-<!--                    </td>-->
-<!--                </tr>-->
                 </tbody>
             </table>
             <?php displayErrors("register");?>
             <input type="submit" name="submit" class="btn" value="Update">
-            <!-- <button class="btn">Register</button> -->
         </form>
         <!--<p>Already have an account?</p>
         <p style=" margin-top: 4px"> <a href="login.php" style="text-decoration: none; color: #16a596;">Log in</a></p>-->

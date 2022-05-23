@@ -35,7 +35,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	font-family: Georgia, Myriad-Roman, AdobeInvisFont;
+	font-family: Georgia, Myriad-Roman, AdobeInvisFont, serif;
 	background-color: white;
 	width: 500px;
 
@@ -90,7 +90,7 @@ li{
 }*/
 #copyright{
 	color: #737373;
-	font-family: Georgia,Myriad-Roman,AdobeInvisFont;
+	font-family: Georgia, Myriad-Roman, AdobeInvisFont, serif;
 	display: flex;
 	justify-content: space-between;
 } 

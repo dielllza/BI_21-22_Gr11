@@ -37,7 +37,7 @@
         <div class="responsibilities">
             <div class="grid-header"><h2><?php echo preg_replace("/zhvillimit/i", 'punës','Procesi i ZHVILLIMIT'); ?></h2></div>
             <div class="grid-content">
-                <p>Zbulo</p>
+                <p><?php echo trim(substr(" Zbulo më shumë", 1, 6), "");?></p>
                 <p>Vërtetimi për vlerën e produktit para se të fillohet zhvillimi.</p>
                 <ul>
                     <li>Digital Strategy</li>

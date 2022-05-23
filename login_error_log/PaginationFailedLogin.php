@@ -19,6 +19,6 @@ include("FailedLoginLog.php");
         }
 
         function __destruct() {
-            echo "<br>No more records to show.";
+            echo "<p><br>No more records to show.</p>";
         }
     }
