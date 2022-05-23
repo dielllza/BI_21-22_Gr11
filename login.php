@@ -34,7 +34,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 							<td>
 								<input type="text" name="email" id="email" autofocus
 								 value = "<?php if(isset($_SESSION["email"])) { echo $_SESSION["email"]; }
-								 				if(isset($_COOKIE["email"])) echo $_COOKIE['email'];?>">
+								 		else if(isset($_COOKIE["email"])) echo $_COOKIE['email'];?>">
 							</td>
 						</tr>
 						<tr>
@@ -52,7 +52,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
 							<td>
 								<input type="password" name="password" id="password"
 								value = "<?php if(isset($_SESSION["password"])) { echo $_SESSION["password"]; }
-											   if(isset($_COOKIE["password"])) echo $_COOKIE['password'];?>">
+										else if(isset($_COOKIE["password"])) echo $_COOKIE['password'];?>">
 							</td>
 						</tr>
 						<tr>

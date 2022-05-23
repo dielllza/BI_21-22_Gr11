@@ -50,8 +50,8 @@ else {
         //echo $e->getMessage();
         $errors["login"] = array("Wrong email and password combination! " . $e->getMessage());
         $writer = new FailedLoginLog();
-        date_default_timezone_set('UTC');
-        $writer->writeToFile($email, date('m/d/Y h:i:s a', time()), $_SERVER['REMOTE_ADDR']);
+        date_default_timezone_set('CEST');
+        $writer->writeToFile($email, date('d/m/y H:i:s'), $_SERVER['REMOTE_ADDR']);
         manageSession();
         header("Location: ../login.php");
     }
