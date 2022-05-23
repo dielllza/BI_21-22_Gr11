@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `app_creator`.`users` (
   `phone_number` VARCHAR(45) NOT NULL,
   `birthdate` DATE NOT NULL,
   `country` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
   `roles_id` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_users_roles_idx` (`roles_id` ASC),
