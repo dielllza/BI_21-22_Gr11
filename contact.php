@@ -53,7 +53,10 @@
                 </canvas>
             </h1>
             <p id="intro">
-                Nwse keni ndonjw pyetje, njw anwtar i stafit do tw jetw gjithmonw i gatshwm tw ju ndihmojw. Mos ngurroni tw na kontaktoni me telefon ose email dhe ne do tw sigurohemi qw t'ju kontaktojmw sa mw shpejtw tw jetw e mundur.
+               <?php
+                $text2 = "Nwse keni ndonjw pyetje, njw anwtar i stafit do tw jetw gjithmonw i gatshwm tw ju ndihmojw. Mos ngurroni tw na kontaktoni me telefon ose email dhe ne do tw sigurohemi qw t'ju kontaktojmw sa mw shpejtw tw jetw e mundur.";
+                    echo str_replace("w","ë",$text2);
+               ?>
             </p>
         </div>
         <div class="contact-us">
@@ -194,8 +197,9 @@
         kontakt.strokeText("Kontakti", 10, 50);
 
         var text = document.getElementById('intro');
-        var result = text.innerHTML.replace(/w/gi, 'ë');
-        text.innerHTML = result;
+         text2 = "Nwse keni ndonjw pyetje, njw anwtar i stafit do tw jetw gjithmonw i gatshwm tw ju ndihmojw. Mos ngurroni tw na kontaktoni me telefon ose email dhe ne do tw sigurohemi qw t'ju kontaktojmw sa mw shpejtw tw jetw e mundur."
+       // var result = text.innerHTML.replace(/w/gi, 'ë');
+        //text.innerHTML = result;
 
         function validate() {
             const emailValid = (email) => {
