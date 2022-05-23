@@ -27,15 +27,15 @@
                 </svg>
             </div>
             <div class="company-desc">
-                <p>Që nga viti 2010, agjencisë sonë i është besuar për të ndihmuar në konceptimin, krijimin dhe prodhimin e produkteve të 
-                    ndryshme dixhitale për disa nga markat, agjencitë dhe kompanitë kryesore vendore. Ne kemi 11 vite përvojë në krijimin e 
-                    aplikacioneve tërheqëse për përdoruesve dhe që njëkohësisht rrisin biznesin tuaj në një nivel të ri. Agjencia jonë 
+                <p><?php printf("Që nga viti %u, agjencisë sonë i është besuar për të ndihmuar në konceptimin, krijimin dhe prodhimin e produkteve të 
+                    ndryshme dixhitale për disa nga markat, agjencitë dhe kompanitë kryesore vendore. Ne kemi %u vite përvojë në krijimin e
+                    aplikacioneve tërheqëse për përdoruesve dhe që njëkohësisht rrisin biznesin tuaj në një nivel të ri.", 2010, 8) ?> Agjencia jonë
                     përmes <a href="#learn-more"><u>metodave më të njohura</u></a> siguron zhvillim të produkteve që janë në hap me teknologjitë e fundit.</p>
             </div>
         </div>
 
         <div class="responsibilities">
-            <div class="grid-header"><h2>Procesi i punës</h2></div>
+            <div class="grid-header"><h2><?php echo preg_replace("/zhvillimit/i", 'punës','Procesi i ZHVILLIMIT'); ?></h2></div>
             <div class="grid-content">
                 <p>Zbulo</p>
                 <p>Vërtetimi për vlerën e produktit para se të fillohet zhvillimi.</p>
@@ -122,7 +122,10 @@
         </div>
 
         <div class="learn-more" id="learn-more">
-            <p>Më shumë rreth qasjes sonë për zhvillim të aplikacioneve...</p>
+            <p><?php
+                $array = preg_split('/-/', 'Më-shumë-rreth-qasjes-sonë-për-zhvillim-të-aplikacioneve...');
+                echo implode(" ", $array);?>
+            </p>
             <div class="videos">
                 <div class="agile-video">
                     <video width="560" height="315" controls>

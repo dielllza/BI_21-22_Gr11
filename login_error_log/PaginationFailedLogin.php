@@ -17,4 +17,8 @@ include("FailedLoginLog.php");
         {
             $this->numLines = $numLines;
         }
+
+        function __destruct() {
+            echo "<br>No more records to show.";
+        }
     }

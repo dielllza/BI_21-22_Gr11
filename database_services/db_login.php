@@ -13,7 +13,7 @@
     $esc_password = password_verify($password, $hashPassword);
 
     if (!$esc_password) {
-        throw new Exception("Incorrect password " . "X" . print_r($user) . "X ". $password . " " . $hashPassword);
+        throw new Exception("Incorrect password");
     }
 
     return $user;
