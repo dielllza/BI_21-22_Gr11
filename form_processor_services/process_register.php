@@ -23,7 +23,7 @@ $phone_regex = '/^\d{3}\s\d{3}\s\d{3}$/';
 $errors = [];
 
 if(isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true) {
-	header("Location: ../home.php");
+	header("Location: ../index.php");
 }
 
 $first_name = $_POST["first_name"];
